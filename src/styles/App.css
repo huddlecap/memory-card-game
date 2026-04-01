@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  height: 300px;
+  background: rgb(201, 234, 234);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #afb5b5;
+  transition: all 0.2s ease;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: rgb(161, 234, 234);
+  border-color: #14cf39;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.card:active {
+  transform: scale(0.97);
+}
